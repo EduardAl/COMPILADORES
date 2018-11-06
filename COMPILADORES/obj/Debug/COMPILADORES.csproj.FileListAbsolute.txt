@@ -1,0 +1,49 @@
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe.config
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.pdb
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csprojResolveAssemblyReference.cache
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Main.resources
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Properties.Resources.resources
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Resultado.resources
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.GenerateResource.Cache
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.exe
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.pdb
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Consulta.resources
+c:\users\wilfredo\documents\visual studio 2013\Projects\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.BD.resources
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe.config
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.exe
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.pdb
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.pdb
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csprojResolveAssemblyReference.cache
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.BD.resources
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Consulta.resources
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Main.resources
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Properties.Resources.resources
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Resultado.resources
+C:\Users\Priscila\Documents\udb\compi\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.GenerateResource.Cache
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe.config
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.exe
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.pdb
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.pdb
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csprojResolveAssemblyReference.cache
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.BD.resources
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Consulta.resources
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Main.resources
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Properties.Resources.resources
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Resultado.resources
+C:\Users\Wilfredo\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.GenerateResource.Cache
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe.config
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.pdb
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csprojAssemblyReference.cache
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.BD.resources
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Consulta.resources
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Main.resources
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Properties.Resources.resources
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Resultado.resources
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.GenerateResource.cache
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.CoreCompileInputs.cache
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.exe
+C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.pdb
