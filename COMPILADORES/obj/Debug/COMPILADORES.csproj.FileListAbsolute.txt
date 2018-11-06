@@ -47,3 +47,15 @@ C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.G
 C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.CoreCompileInputs.cache
 C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.exe
 C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.pdb
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe.config
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.exe
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.pdb
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.pdb
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csprojResolveAssemblyReference.cache
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.BD.resources
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Consulta.resources
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Main.resources
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Properties.Resources.resources
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Resultado.resources
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.GenerateResource.Cache
