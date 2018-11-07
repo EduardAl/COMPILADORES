@@ -47,3 +47,16 @@ C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.G
 C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.CoreCompileInputs.cache
 C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.exe
 C:\Users\eduar\Desktop\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.pdb
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe.config
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.pdb
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csprojAssemblyReference.cache
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.BD.resources
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Consulta.resources
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Main.resources
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Properties.Resources.resources
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Resultado.resources
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.GenerateResource.cache
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csproj.CoreCompileInputs.cache
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.exe
+C:\Users\Oscar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.pdb
