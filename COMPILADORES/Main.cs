@@ -29,63 +29,66 @@ namespace COMPILADORES
         String conexion;
         private void button1_Click(object sender, EventArgs e)
         {
-            txtResultado.Clear();
-
-            Analisis analisis = new Analisis();
-            ArrayList palabrasErroneas = new ArrayList();
-
-            string[] words = analisis.analisisLexico(txtSQL.Text, ref palabrasErroneas);
-
-            if (palabrasErroneas.Count > 0) // Comprobando si se detecto algun error lexico
+            if (txtSQL.Text == "")
             {
-                mostrarErrores(1, ref palabrasErroneas);
+                MessageBox.Show("Ingrese una consulta", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else 
+            else
             {
-                instruccionCorrecta = analisis.analisiSintatico(ref words, ref palabrasErroneas, ref tipo);
-                if (palabrasErroneas.Count > 0) // Comprobando si se detecto algun error sintactico
+                txtResultado.Clear();
+
+                Analisis analisis = new Analisis();
+                ArrayList palabrasErroneas = new ArrayList();
+
+                string[] words = analisis.analisisLexico(txtSQL.Text, ref palabrasErroneas);
+
+                if (palabrasErroneas.Count > 0) // Comprobando si se detecto algun error lexico
                 {
-                    mostrarErrores(2, ref palabrasErroneas);
+                    mostrarErrores(1, ref palabrasErroneas);
                 }
                 else
                 {
-                    txtResultado.Text = "Se ejecuto correctamente la consulta";
-                    //variable que convierte el texto del textbox 
-                    string texto = txtSQL.Text;
-                    string minus = texto.ToLower();
-                    bool s;
-
-                    s = minus.Contains("select");
-
-                    conn.ConnectionString = conexion;
-                    conn.Open();
-
-                    //enviando el texto con la variable de la conexion
-                    SqlCommand cmd = new SqlCommand(minus, conn);
-
-                    //Ejecuta la linea de comando
-                    try
+                    instruccionCorrecta = analisis.analisiSintatico(ref words, ref palabrasErroneas, ref tipo);
+                    if (palabrasErroneas.Count > 0) // Comprobando si se detecto algun error sintactico
                     {
-
-                        if (s) ConsultarDatos(cmd);
-                        else cmd.ExecuteNonQuery();
+                        mostrarErrores(2, ref palabrasErroneas);
                     }
-
-                    catch (Exception ex)
+                    else
                     {
-                        txtResultado.Text = ex.Message;
-                    }
-                    finally
-                    {
-                        conn.Close();
-                    }
+                        txtResultado.Text = "Se ejecuto correctamente la consulta";
+                        //variable que convierte el texto del textbox 
+                        string texto = txtSQL.Text;
+                        string minus = texto.ToLower();
+                        bool s;
 
+                        s = minus.Contains("select");
+
+                        conn.ConnectionString = conexion;
+                        conn.Open();
+
+                        //enviando el texto con la variable de la conexion
+                        SqlCommand cmd = new SqlCommand(minus, conn);
+
+                        //Ejecuta la linea de comando
+                        try
+                        {
+
+                            if (s) ConsultarDatos(cmd);
+                            else cmd.ExecuteNonQuery();
+                        }
+
+                        catch (Exception ex)
+                        {
+                            txtResultado.Text = ex.Message;
+                        }
+                        finally
+                        {
+                            conn.Close();
+                        }
+
+                    }
                 }
             }
-
-
-            /*
-*/
 
         }
 
@@ -162,8 +165,19 @@ namespace COMPILADORES
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            Consulta consulta = new Consulta();
-            consulta.Show();
+            if (comboBox1.Items.Count <= 0)
+            {
+                MessageBox.Show("Necesita una conexion", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (comboBox1.SelectedIndex == -1)
+            {
+                MessageBox.Show("Seleccione una base de datos", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                Consulta consulta = new Consulta();
+                consulta.Show();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -177,6 +191,8 @@ namespace COMPILADORES
             string[] part = txtStringCon.Text.Split(';');
             conexion = part[0] + ";Initial Catalog=" + comboBox1.SelectedItem.ToString() + ";" + part[1];
             button1.Enabled = true;
+            button3.Enabled = true;
+            button2.Enabled = true;
             //MessageBox.Show(part[0]+";Initial Catalog="+comboBox1.SelectedItem.ToString()+";"+part[1]);
         }
     }

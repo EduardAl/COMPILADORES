@@ -43,5 +43,18 @@ namespace COMPILADORES
             }
 
         }
+
+        private void Consulta_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnejecuta_Click(object sender, EventArgs e)
+        {
+            txtConsulta.Clear();
+            txtOrderBy.Clear();
+            txtOriginal.Clear();
+            txtWhere.Clear();
+        }
     }
 }

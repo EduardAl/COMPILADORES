@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Consulta));
             this.txtOriginal = new System.Windows.Forms.TextBox();
             this.txtWhere = new System.Windows.Forms.TextBox();
             this.txtOrderBy = new System.Windows.Forms.TextBox();
@@ -37,6 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.txtConsulta = new System.Windows.Forms.TextBox();
+            this.btnejecuta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtOriginal
@@ -66,33 +68,43 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(13, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 13);
+            this.label1.Size = new System.Drawing.Size(101, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "Consulta original:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 131);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(11, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 13);
+            this.label2.Size = new System.Drawing.Size(92, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Clausula Where";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 204);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(12, 201);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 13);
+            this.label3.Size = new System.Drawing.Size(104, 15);
             this.label3.TabIndex = 5;
             this.label3.Text = "Clausula Order By";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 414);
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(12, 417);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 23);
             this.button1.TabIndex = 6;
@@ -103,9 +115,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 292);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(13, 291);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 13);
+            this.label4.Size = new System.Drawing.Size(84, 15);
             this.label4.TabIndex = 8;
             this.label4.Text = "Consulta SQL:";
             // 
@@ -117,11 +132,25 @@
             this.txtConsulta.Size = new System.Drawing.Size(377, 100);
             this.txtConsulta.TabIndex = 7;
             // 
+            // btnejecuta
+            // 
+            this.btnejecuta.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnejecuta.Location = new System.Drawing.Point(299, 417);
+            this.btnejecuta.Name = "btnejecuta";
+            this.btnejecuta.Size = new System.Drawing.Size(90, 23);
+            this.btnejecuta.TabIndex = 9;
+            this.btnejecuta.Text = "Limpiar";
+            this.btnejecuta.UseVisualStyleBackColor = true;
+            this.btnejecuta.Click += new System.EventHandler(this.btnejecuta_Click);
+            // 
             // Consulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(407, 452);
+            this.Controls.Add(this.btnejecuta);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtConsulta);
             this.Controls.Add(this.button1);
@@ -131,8 +160,10 @@
             this.Controls.Add(this.txtOrderBy);
             this.Controls.Add(this.txtWhere);
             this.Controls.Add(this.txtOriginal);
+            this.DoubleBuffered = true;
             this.Name = "Consulta";
             this.Text = "Consulta";
+            this.Load += new System.EventHandler(this.Consulta_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,5 +180,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtConsulta;
+        private System.Windows.Forms.Button btnejecuta;
     }
 }
