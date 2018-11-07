@@ -145,7 +145,7 @@ namespace COMPILADORES
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string[] part = CCadena.Split(';');
-            conexion = part[0] + ";Initial Catalog=" + comboBox1.SelectedItem.ToString() + ";" + part[1];
+            conexion = part[0] + ";Initial Catalog=" + comboBox1.SelectedItem.ToString() + ";Integrated Security=Yes";
             Ejecucion.Enabled = true;
             DBCatalog.Enabled = true;
             btnGenerarConsulta.Enabled = true;
