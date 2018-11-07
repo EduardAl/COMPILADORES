@@ -14,9 +14,11 @@ namespace COMPILADORES
     public partial class BD : Form
     {
         string strCon;
-        public BD(string con)
+        private Main m_frm;
+        public BD(string con, Main frm)
         {
             strCon = con;
+            m_frm = frm;
             InitializeComponent();
         }
 
@@ -84,6 +86,12 @@ namespace COMPILADORES
                     childNode = parentNode.Nodes.Add(i.Text);
                 PopulateTreeView(i.ID, childNode);
             }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            m_frm.panel_lateral.Width = 0;
+            this.Close();
         }
     }
 }
