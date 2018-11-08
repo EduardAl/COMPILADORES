@@ -48,12 +48,6 @@
     <Compile Include="Analisis.cs" />
     <Compile Include="analizador\AnalisisLexico.cs" />
     <Compile Include="analizador\AnalisisSintactico.cs" />
-    <Compile Include="Estructura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Estructura.Designer.cs">
-      <DependentUpon>Estructura.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,9 +63,6 @@
       <DependentUpon>Resultado.cs</DependentUpon>
     </Compile>
     <Compile Include="TreeViewItem.cs" />
-    <EmbeddedResource Include="Estructura.resx">
-      <DependentUpon>Estructura.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>

@@ -53,8 +53,9 @@ namespace COMPILADORES
 
         private void Main_Load(object sender, EventArgs e)
         {
-            this.Size = new Size(803, 527);
+            //this.Size = new Size(803+213, 527);
             groupBox2.Visible = false;
+            groupBox3.Visible = false;
             Ejecucion.Enabled = false;
             txtResultado.ReadOnly = true;
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -135,7 +136,7 @@ namespace COMPILADORES
             }
             else
             {
-                this.Size = new Size(803 + 423, 527);
+                //this.Size = new Size(803 + 423, 527);
                 groupBox2.Visible = true;
                 txtOriginal.Clear();
                 txtWhere.Clear();
@@ -222,12 +223,14 @@ namespace COMPILADORES
                     MessageBox.Show(":/");
                 }
                 LlenarComboBox();
+                DBCatalog.Enabled = true;
                 conn.Close();
 
                 MessageBox.Show("Prueba de conexión exitosa", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception)
             {
+                DBCatalog.Enabled = false;
                 MessageBox.Show("Prueba de conexión fallida", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
@@ -235,8 +238,10 @@ namespace COMPILADORES
 
         private void DBCatalog_Click_1(object sender, EventArgs e)
         {
-            Estructura ventanaBD = new Estructura(CCadena);
-            ventanaBD.Show();
+            //            Estructura ventanaBD = new Estructura(CCadena);
+            BD_Load(CCadena);
+            groupBox3.Visible = true;
+            //            ventanaBD.Show();
         }
         private void mostrarErrores(int op, ref ArrayList errores)
         {
@@ -263,6 +268,77 @@ namespace COMPILADORES
             txtWhere.Clear();
             txtOrderBy.Clear();
             txtConsulta.Clear();
+        }
+
+        List<TreeViewItem> treeViewList;
+        private void BD_Load(string strCon)
+        {
+
+            System.Data.SqlClient.SqlConnection SqlCon = new System.Data.SqlClient.SqlConnection(strCon);
+            SqlCon.Open();
+
+            System.Data.SqlClient.SqlCommand SqlCom = new System.Data.SqlClient.SqlCommand();
+            SqlCom.Connection = SqlCon;
+            SqlCom.CommandType = CommandType.StoredProcedure;
+            SqlCom.CommandText = "sp_databases";
+
+            System.Data.SqlClient.SqlDataReader SqlDR;
+            SqlDR = SqlCom.ExecuteReader();
+
+            List<String> listBD = new List<String>();
+
+            while (SqlDR.Read())
+            {
+                listBD.Add(SqlDR.GetString(0));
+            }
+            SqlCon.Close();
+
+            treeViewList = new List<TreeViewItem>();
+            int pi = 0;
+            int id = 1;
+            foreach (String list in listBD)
+            {
+                SqlCon.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                SqlDataReader reader;
+
+                cmd.CommandText = "SELECT * FROM " + list + ".INFORMATION_SCHEMA.TABLES;";
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = SqlCon;
+                reader = cmd.ExecuteReader();
+
+                treeViewList.Add(new TreeViewItem() { ParentID = 0, ID = id, Text = list });
+                while (reader.Read())
+                {
+                    treeViewList.Add(new TreeViewItem() { ParentID = id, ID = id + 10000, Text = reader.GetString(2) });
+                }
+                id++;
+                SqlCon.Close();
+            }
+            PopulateTreeView(0, null);
+
+        }
+
+        private void PopulateTreeView(int parentId, TreeNode parentNode)
+        {
+            var filteredItems = treeViewList.Where(item =>
+                                        item.ParentID == parentId);
+
+            TreeNode childNode;
+            foreach (var i in filteredItems.ToList())
+            {
+                if (parentNode == null)
+                    childNode = treeView1.Nodes.Add(i.Text);
+                else
+                    childNode = parentNode.Nodes.Add(i.Text);
+                PopulateTreeView(i.ID, childNode);
+            }
+        }
+
+        private void btnCerrarBD_Click(object sender, EventArgs e)
+        {
+            groupBox3.Visible = false;
         }
     }
 }

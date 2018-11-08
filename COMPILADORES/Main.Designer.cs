@@ -52,6 +52,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.Cancelar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtConsulta = new System.Windows.Forms.TextBox();
@@ -62,13 +63,17 @@
             this.txtOrderBy = new System.Windows.Forms.TextBox();
             this.txtWhere = new System.Windows.Forms.TextBox();
             this.txtOriginal = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.btnCerrarBD = new System.Windows.Forms.Button();
+            this.lblBasedeDatos = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -96,7 +101,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(2, 3);
+            this.groupBox1.Location = new System.Drawing.Point(229, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(784, 483);
             this.groupBox1.TabIndex = 0;
@@ -339,16 +344,27 @@
             this.groupBox2.Controls.Add(this.txtOrderBy);
             this.groupBox2.Controls.Add(this.txtWhere);
             this.groupBox2.Controls.Add(this.txtOriginal);
-            this.groupBox2.Location = new System.Drawing.Point(790, 3);
+            this.groupBox2.Location = new System.Drawing.Point(1019, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(413, 483);
+            this.groupBox2.Size = new System.Drawing.Size(346, 483);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(303, 9);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(39, 25);
+            this.pictureBox4.TabIndex = 20;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Cancelar
             // 
             this.Cancelar.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancelar.Location = new System.Drawing.Point(308, 437);
+            this.Cancelar.Location = new System.Drawing.Point(252, 431);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(90, 23);
             this.Cancelar.TabIndex = 19;
@@ -362,7 +378,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(22, 311);
+            this.label5.Location = new System.Drawing.Point(7, 305);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 15);
             this.label5.TabIndex = 18;
@@ -370,17 +386,17 @@
             // 
             // txtConsulta
             // 
-            this.txtConsulta.Location = new System.Drawing.Point(21, 328);
+            this.txtConsulta.Location = new System.Drawing.Point(6, 322);
             this.txtConsulta.Multiline = true;
             this.txtConsulta.Name = "txtConsulta";
             this.txtConsulta.ReadOnly = true;
-            this.txtConsulta.Size = new System.Drawing.Size(377, 100);
+            this.txtConsulta.Size = new System.Drawing.Size(333, 100);
             this.txtConsulta.TabIndex = 17;
             // 
             // btnGenerar
             // 
             this.btnGenerar.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerar.Location = new System.Drawing.Point(21, 437);
+            this.btnGenerar.Location = new System.Drawing.Point(6, 431);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(123, 23);
             this.btnGenerar.TabIndex = 16;
@@ -394,7 +410,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(21, 221);
+            this.label6.Location = new System.Drawing.Point(6, 215);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 15);
             this.label6.TabIndex = 15;
@@ -406,7 +422,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(20, 150);
+            this.label7.Location = new System.Drawing.Point(5, 144);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 15);
             this.label7.TabIndex = 14;
@@ -418,7 +434,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(22, 27);
+            this.label8.Location = new System.Drawing.Point(7, 21);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 15);
             this.label8.TabIndex = 13;
@@ -426,50 +442,84 @@
             // 
             // txtOrderBy
             // 
-            this.txtOrderBy.Location = new System.Drawing.Point(21, 240);
+            this.txtOrderBy.Location = new System.Drawing.Point(6, 234);
             this.txtOrderBy.Multiline = true;
             this.txtOrderBy.Name = "txtOrderBy";
-            this.txtOrderBy.Size = new System.Drawing.Size(377, 58);
+            this.txtOrderBy.Size = new System.Drawing.Size(333, 58);
             this.txtOrderBy.TabIndex = 12;
             // 
             // txtWhere
             // 
-            this.txtWhere.Location = new System.Drawing.Point(21, 167);
+            this.txtWhere.Location = new System.Drawing.Point(6, 161);
             this.txtWhere.Multiline = true;
             this.txtWhere.Name = "txtWhere";
-            this.txtWhere.Size = new System.Drawing.Size(377, 37);
+            this.txtWhere.Size = new System.Drawing.Size(333, 37);
             this.txtWhere.TabIndex = 11;
             // 
             // txtOriginal
             // 
-            this.txtOriginal.Location = new System.Drawing.Point(21, 45);
+            this.txtOriginal.Location = new System.Drawing.Point(6, 39);
             this.txtOriginal.Multiline = true;
             this.txtOriginal.Name = "txtOriginal";
-            this.txtOriginal.Size = new System.Drawing.Size(377, 86);
+            this.txtOriginal.Size = new System.Drawing.Size(333, 86);
             this.txtOriginal.TabIndex = 10;
             // 
-            // pictureBox4
+            // groupBox3
             // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(359, 14);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 25);
-            this.pictureBox4.TabIndex = 20;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.treeView1);
+            this.groupBox3.Controls.Add(this.btnCerrarBD);
+            this.groupBox3.Controls.Add(this.lblBasedeDatos);
+            this.groupBox3.Location = new System.Drawing.Point(12, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(211, 483);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Location = new System.Drawing.Point(6, 45);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(199, 399);
+            this.treeView1.TabIndex = 21;
+            // 
+            // btnCerrarBD
+            // 
+            this.btnCerrarBD.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarBD.Location = new System.Drawing.Point(140, 450);
+            this.btnCerrarBD.Name = "btnCerrarBD";
+            this.btnCerrarBD.Size = new System.Drawing.Size(65, 23);
+            this.btnCerrarBD.TabIndex = 19;
+            this.btnCerrarBD.Text = "Cerrar";
+            this.btnCerrarBD.UseVisualStyleBackColor = true;
+            this.btnCerrarBD.Click += new System.EventHandler(this.btnCerrarBD_Click);
+            // 
+            // lblBasedeDatos
+            // 
+            this.lblBasedeDatos.AutoSize = true;
+            this.lblBasedeDatos.BackColor = System.Drawing.Color.Transparent;
+            this.lblBasedeDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBasedeDatos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblBasedeDatos.Location = new System.Drawing.Point(49, 20);
+            this.lblBasedeDatos.Name = "lblBasedeDatos";
+            this.lblBasedeDatos.Size = new System.Drawing.Size(112, 20);
+            this.lblBasedeDatos.TabIndex = 13;
+            this.lblBasedeDatos.Text = "Base de datos";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1210, 488);
+            this.ClientSize = new System.Drawing.Size(1370, 488);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MENU";
             this.Load += new System.EventHandler(this.Main_Load);
             this.groupBox1.ResumeLayout(false);
@@ -480,6 +530,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -520,6 +572,10 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnCerrarBD;
+        private System.Windows.Forms.Label lblBasedeDatos;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
 
