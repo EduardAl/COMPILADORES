@@ -62,11 +62,13 @@
             this.txtOrderBy = new System.Windows.Forms.TextBox();
             this.txtWhere = new System.Windows.Forms.TextBox();
             this.txtOriginal = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -144,7 +146,6 @@
             this.txtPassword.PasswordChar = '■';
             this.txtPassword.Size = new System.Drawing.Size(139, 29);
             this.txtPassword.TabIndex = 31;
-            this.txtPassword.Text = "Ah te creas no iba a poner mi contraseña";
             // 
             // txtUser
             // 
@@ -154,7 +155,6 @@
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(139, 29);
             this.txtUser.TabIndex = 30;
-            this.txtUser.Text = "sa";
             // 
             // pictureBox3
             // 
@@ -287,7 +287,7 @@
             this.txtSorce.Name = "txtSorce";
             this.txtSorce.Size = new System.Drawing.Size(139, 29);
             this.txtSorce.TabIndex = 18;
-            this.txtSorce.Text = "EDUARD";
+            this.txtSorce.Text = "Localhost";
             // 
             // label3
             // 
@@ -328,6 +328,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.pictureBox4);
             this.groupBox2.Controls.Add(this.Cancelar);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txtConsulta);
@@ -347,7 +348,7 @@
             // Cancelar
             // 
             this.Cancelar.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cancelar.Location = new System.Drawing.Point(305, 412);
+            this.Cancelar.Location = new System.Drawing.Point(308, 437);
             this.Cancelar.Name = "Cancelar";
             this.Cancelar.Size = new System.Drawing.Size(90, 23);
             this.Cancelar.TabIndex = 19;
@@ -361,7 +362,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(19, 286);
+            this.label5.Location = new System.Drawing.Point(22, 311);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 15);
             this.label5.TabIndex = 18;
@@ -369,16 +370,17 @@
             // 
             // txtConsulta
             // 
-            this.txtConsulta.Location = new System.Drawing.Point(18, 303);
+            this.txtConsulta.Location = new System.Drawing.Point(21, 328);
             this.txtConsulta.Multiline = true;
             this.txtConsulta.Name = "txtConsulta";
+            this.txtConsulta.ReadOnly = true;
             this.txtConsulta.Size = new System.Drawing.Size(377, 100);
             this.txtConsulta.TabIndex = 17;
             // 
             // btnGenerar
             // 
             this.btnGenerar.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGenerar.Location = new System.Drawing.Point(18, 412);
+            this.btnGenerar.Location = new System.Drawing.Point(21, 437);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(123, 23);
             this.btnGenerar.TabIndex = 16;
@@ -392,7 +394,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(18, 196);
+            this.label6.Location = new System.Drawing.Point(21, 221);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 15);
             this.label6.TabIndex = 15;
@@ -404,7 +406,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(17, 125);
+            this.label7.Location = new System.Drawing.Point(20, 150);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 15);
             this.label7.TabIndex = 14;
@@ -416,7 +418,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(19, 2);
+            this.label8.Location = new System.Drawing.Point(22, 27);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(101, 15);
             this.label8.TabIndex = 13;
@@ -424,7 +426,7 @@
             // 
             // txtOrderBy
             // 
-            this.txtOrderBy.Location = new System.Drawing.Point(18, 215);
+            this.txtOrderBy.Location = new System.Drawing.Point(21, 240);
             this.txtOrderBy.Multiline = true;
             this.txtOrderBy.Name = "txtOrderBy";
             this.txtOrderBy.Size = new System.Drawing.Size(377, 58);
@@ -432,7 +434,7 @@
             // 
             // txtWhere
             // 
-            this.txtWhere.Location = new System.Drawing.Point(18, 142);
+            this.txtWhere.Location = new System.Drawing.Point(21, 167);
             this.txtWhere.Multiline = true;
             this.txtWhere.Name = "txtWhere";
             this.txtWhere.Size = new System.Drawing.Size(377, 37);
@@ -440,11 +442,22 @@
             // 
             // txtOriginal
             // 
-            this.txtOriginal.Location = new System.Drawing.Point(18, 20);
+            this.txtOriginal.Location = new System.Drawing.Point(21, 45);
             this.txtOriginal.Multiline = true;
             this.txtOriginal.Name = "txtOriginal";
             this.txtOriginal.Size = new System.Drawing.Size(377, 86);
             this.txtOriginal.TabIndex = 10;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Location = new System.Drawing.Point(359, 14);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(39, 25);
+            this.pictureBox4.TabIndex = 20;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // Main
             // 
@@ -466,6 +479,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -505,6 +519,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 
