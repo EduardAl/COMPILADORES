@@ -287,6 +287,7 @@
             this.txtSorce.Name = "txtSorce";
             this.txtSorce.Size = new System.Drawing.Size(139, 29);
             this.txtSorce.TabIndex = 18;
+            this.txtSorce.Text = "Localhost";
             // 
             // label3
             // 
