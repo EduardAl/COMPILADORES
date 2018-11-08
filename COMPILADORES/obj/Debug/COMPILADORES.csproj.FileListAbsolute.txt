@@ -53,8 +53,6 @@ C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Deb
 C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.exe
 C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\bin\Debug\COMPILADORES.pdb
 C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.csprojResolveAssemblyReference.cache
-C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.BD.resources
-C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Consulta.resources
 C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Main.resources
 C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Properties.Resources.resources
 C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Resultado.resources
@@ -71,3 +69,4 @@ C:\Users\eduar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILA
 C:\Users\eduar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.exe
 C:\Users\eduar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.pdb
 C:\Users\eduar\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Estructura.resources
+C:\Users\Edwin Escamilla\Source\Repos\EduardAl\COMPILADORES\COMPILADORES\obj\Debug\COMPILADORES.Estructura.resources

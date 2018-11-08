@@ -136,6 +136,10 @@ namespace COMPILADORES
             {
                 this.Size = new Size(803 + 423, 527);
                 groupBox2.Visible = true;
+                txtOriginal.Clear();
+                txtWhere.Clear();
+                txtOrderBy.Clear();
+                txtConsulta.Clear();
             }
         }
 
@@ -250,6 +254,14 @@ namespace COMPILADORES
                     txtResultado.Text += s + "\r\n";
                 }
             }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            txtOriginal.Clear();
+            txtWhere.Clear();
+            txtOrderBy.Clear();
+            txtConsulta.Clear();
         }
     }
 }
