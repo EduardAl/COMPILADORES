@@ -50,7 +50,6 @@ namespace COMPILADORES
                 comboBox1.Items.Add(SqlDR.GetValue(0));
             }
         }
-
         private void Main_Load(object sender, EventArgs e)
         {
             this.Size = new Size(803, 527);
@@ -123,7 +122,7 @@ namespace COMPILADORES
             }
 
         }
-        private void btnGenerarConsulta_Click_1(object sender, EventArgs e)
+        private void BtnGenerarConsulta_Click_1(object sender, EventArgs e)
         {
             if (comboBox1.Items.Count <= 0)
             {
@@ -142,7 +141,7 @@ namespace COMPILADORES
 
 
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string[] part = CCadena.Split(';');
             conexion = part[0] + ";Initial Catalog=" + comboBox1.SelectedItem.ToString() + ";Integrated Security=Yes";

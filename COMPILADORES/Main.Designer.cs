@@ -208,7 +208,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(228, 21);
             this.comboBox1.TabIndex = 25;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // DBCatalog
             // 
@@ -234,7 +234,7 @@
             this.btnGenerarConsulta.TabIndex = 23;
             this.btnGenerarConsulta.Text = "Generar consulta";
             this.btnGenerarConsulta.UseVisualStyleBackColor = true;
-            this.btnGenerarConsulta.Click += new System.EventHandler(this.btnGenerarConsulta_Click_1);
+            this.btnGenerarConsulta.Click += new System.EventHandler(this.BtnGenerarConsulta_Click_1);
             // 
             // btnconn
             // 
