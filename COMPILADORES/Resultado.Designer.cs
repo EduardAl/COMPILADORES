@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Resultado));
             this.dbGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dbGridView)).BeginInit();
             this.SuspendLayout();
@@ -37,15 +38,18 @@
             this.dbGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dbGridView.Location = new System.Drawing.Point(-5, 0);
             this.dbGridView.Name = "dbGridView";
-            this.dbGridView.Size = new System.Drawing.Size(759, 394);
+            this.dbGridView.Size = new System.Drawing.Size(762, 395);
             this.dbGridView.TabIndex = 0;
             // 
             // Resultado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(757, 395);
             this.Controls.Add(this.dbGridView);
+            this.DoubleBuffered = true;
             this.Name = "Resultado";
             this.Text = "Resultado";
             this.Load += new System.EventHandler(this.Resultado_Load);

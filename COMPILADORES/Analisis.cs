@@ -35,7 +35,7 @@ namespace COMPILADORES
             expDecimal = new Regex("^[0-9]+(\\.[0-9]+)?$"); // Valida valores decimales
             expTexto = new Regex("^'.*'$"); // Valida texto
             expFecha = new Regex("^'([1|2][0-9]{3})-([0][1-9]|[1][0-2])-([0][1-9]|[12][0-9]|3[01])'$"); // Valida fechas
-            expOtros = new Regex("^[=,;()\\*]$");
+            expOtros = new Regex("^[=,;()\\*><]$");
         }
 
         // Esta funcion construira las expresiones regulares para comparar si las palabras ingresadas por el usuario

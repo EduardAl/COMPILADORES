@@ -48,17 +48,11 @@
     <Compile Include="Analisis.cs" />
     <Compile Include="analizador\AnalisisLexico.cs" />
     <Compile Include="analizador\AnalisisSintactico.cs" />
-    <Compile Include="BD.cs">
+    <Compile Include="Estructura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BD.Designer.cs">
-      <DependentUpon>BD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Consulta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Consulta.Designer.cs">
-      <DependentUpon>Consulta.cs</DependentUpon>
+    <Compile Include="Estructura.Designer.cs">
+      <DependentUpon>Estructura.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -75,11 +69,8 @@
       <DependentUpon>Resultado.cs</DependentUpon>
     </Compile>
     <Compile Include="TreeViewItem.cs" />
-    <EmbeddedResource Include="BD.resx">
-      <DependentUpon>BD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Consulta.resx">
-      <DependentUpon>Consulta.cs</DependentUpon>
+    <EmbeddedResource Include="Estructura.resx">
+      <DependentUpon>Estructura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
